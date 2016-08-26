@@ -1,2 +1,4 @@
+import<std>
+
 ? main
   print:"Hello, world!"
