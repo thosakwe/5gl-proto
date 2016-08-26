@@ -1,0 +1,9 @@
+? fib(n)
+  >=:1:n
+    n
+  else
+    +:(fib:(-:1:n)):(fib:(-:2:n))
+    
+? main
+  def x := 17
+  printf:"The %dth Fibonacci number is: %d\n":x:(fib:x)
