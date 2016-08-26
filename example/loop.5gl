@@ -1,6 +1,8 @@
 # Currently debating whether to include loops in the language...
 # Print numbers 1 through 255
 
+import <std>
+
 ? _loop(i, max)
   print:"%0":i
   i := +:i:1
