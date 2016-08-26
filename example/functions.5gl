@@ -11,7 +11,7 @@
   
   # Optional parameters can have a value assumed.
 ? assumptions(n assume 0)
-  printf:"n was %d%n":n
+  print:"n was %0%n":n
   
 # Calling functions is easy. Separate all arguments with colons. If the function takes no arguments, postfix it with '!'.
 ? main
