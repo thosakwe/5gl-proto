@@ -1,0 +1,10 @@
+# A while loop will repeatedly run statements in a block scope until the given constraint is no longer truthy.
+
+import <std>
+import <stdio> as stdio
+
+? main
+  while 1
+    stdio.write:"Say something: "
+    def line := stdio.read!
+    print:"You said: %0":line
