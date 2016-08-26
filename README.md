@@ -1,4 +1,4 @@
-# 5gl-proto
+# 5th-Generation Language Prototype
 Loose prototype of a 5th-gen language with terse syntax.
 
 This will probably just be written in Java and generate some sort of bytecode, probably JVM.
