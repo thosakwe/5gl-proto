@@ -1,5 +1,7 @@
 # 5GL allows you to define custom constraints for data.
 
+import <std>
+
 # Functions can take multiple arguments, separated by commas.
 ? add1(num)
   # No need for a 'return' keyword. The function will automatically return the last evaluated value.
