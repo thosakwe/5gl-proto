@@ -1,0 +1,32 @@
+import <convert> as convert
+import <io>
+import <std>
+import <string>
+import "token" as Token
+
+# Adds element to array, returns index
+_push(arr, elem)
+  def len := sizeof:arr
+  arr[len] := elem
+  len
+  
+_showHelp
+  print:"usage: 5gl [options...] <file>"
+
+? scan(filename)
+  def file := fopen:filename:"r"
+  def text := read_text:file
+  def chars := convert.str_to_chars:text
+  def tokens := []
+  
+  for ch, i in [0..sizeof:chars]
+    ==:ch:' '
+      def token := Token.new:Token.WHITESPACE!:" "
+      _push(tokens, token)
+      
+? main(args)
+  >:1:(sizeof:args)
+    for arg in args
+      scan:arg
+  else
+    _showHelp
