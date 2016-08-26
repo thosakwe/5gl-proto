@@ -1,0 +1,25 @@
+# A for loop lets you run code within a block scope once for each element in a set.
+# You can pass a range of expressions to run the block that many times.
+
+import <std>
+
+# For example, this will print "Hello, world!" 10 times.
+? print10
+  for [1..10]
+    print:"Hello, world!"
+    
+# You can also assign the iterator value to a variable.
+? print5
+  for i in [1..5]
+    print:"Printed %0 time(s):i
+    
+# For loops will also run on heterogeneous sets.
+  def heterogeneous := [1, "two", 3.0, "FOUR"]
+  
+  for foo in heterogeneous
+    foo # This doesn't actually do anything, but...
+    
+  # In addition, you can obtain the current index within a set.
+  for foo, i in heterogeneous
+    print:"Heterogeneous element #%0: %1":(+:i:1):foo
+  
