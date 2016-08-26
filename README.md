@@ -5,7 +5,7 @@ Loose prototype of a 5th-gen language with terse syntax.
  Proto code:
  
  ```
- import <math> as Math
+import <math> as Math
 
 ? myFunc(a, b assume 2)
   +:a:b
