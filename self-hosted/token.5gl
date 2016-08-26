@@ -1,0 +1,17 @@
+# No concept of an object in 5GL, so we'll just store as sets
+# Also no concept of classes, so check this out...
+
+# WHITESPACE Token Type
+? WHITESPACE
+  0
+
+? new(type, text)
+  [type, text]
+  
+# Type getter
+? type(token)
+  token[0]
+  
+# Text getter
+? text(token)
+  token[1]
