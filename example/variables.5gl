@@ -1,4 +1,4 @@
-# Proto does not support globals.
+# 5GL does not support globals.
 # However, variables are scoped.
 
 import <std> only cat
