@@ -1,5 +1,4 @@
-# Currently debating whether to include loops in the language...
-# Print numbers 1 through 255
+# Print numbers 1 through 255 via manual loop
 
 import <std>
 
