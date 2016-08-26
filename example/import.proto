@@ -2,6 +2,7 @@
 # By default, all of a module's members will be loaded into the current scope.
 
 import <std> # All members of <std> are now available
+import "loop"
 
 ? foo
   cat:"Hello, ":"world!"
