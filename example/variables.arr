@@ -1,6 +1,8 @@
 # Proto does not support globals.
 # However, variables are scoped.
 
+import <std> only cat
+
 ? myFunc(name)
   # Easily declare a local variable with 'def'
   def foo := 4
