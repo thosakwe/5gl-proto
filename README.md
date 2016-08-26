@@ -15,7 +15,7 @@ import <math> as Math
   cond1
     def one := 1
     def three := +:one:2
-    printf:"Three is %d":three
+    print:"Three is %0":three
     Math.pow:three:2
   cond2
     print:"cond2 was true"
@@ -31,7 +31,7 @@ import <math> as Math
     if (cond) {
         int one = 1;
         int three = one + 2;
-        printf("Three is %d", three);
+        printf("Three is %d\n", three);
         return three ^ 2;
     } else if (cond2) {
         return printf("cond2 was true\n");
