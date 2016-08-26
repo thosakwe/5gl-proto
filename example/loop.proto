@@ -1,0 +1,14 @@
+# Currently debating whether to include loops in the language...
+# Print numbers 1 through 255
+
+? _loop(i, max)
+  printf:"%d":i
+  i := +:i:1
+  <:255:i
+    _loop:i:max
+
+? main
+  def i := 0
+  _loop:i:255
+  print:"Done."
+  0
