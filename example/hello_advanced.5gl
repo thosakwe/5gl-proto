@@ -6,4 +6,4 @@ import <std>
 ? main
   def name := "advanced world"
   def greeting := greet:name
-  printf:greeting
+  print:greeting
