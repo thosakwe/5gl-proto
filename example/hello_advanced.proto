@@ -1,0 +1,9 @@
+import <std>
+
+? greet(name)
+  cat:"Hello, ":name:"!"
+
+? main
+  def name := "advanced world"
+  def greeting := greet:name
+  printf:greeting
