@@ -1,0 +1,30 @@
+import <convert> as convert only parse_int
+import <socket>
+import <stderr> as stderr
+import <string>
+
+? _listen(socket)
+  while 1
+    def client := socket_accept:socket
+    socket_writeln:client:"200 OK HTTP/1.1"
+    socket_writeln:client:"Server: 5GL"
+    socket_writeln:client
+    socket_writeln:client:"<!DOCTYPE html><html><head><title>Hello, world!</title></head><body><h1>Hello, world!</h1></body></html>"
+    socket_writeln:client
+
+? main(args)
+  def port := 3000
+  
+  for arg, i in args
+    ==:0:(strcmp:arg:"--port")
+      <:(-:(sizeof:args):1):i
+        def lookahead := args[+:i:1]
+        port := convert.parse_int(lookahead)
+        
+  def socket := socket:"tcp"
+  socket_bind:socket:port
+    _listen:socket
+  else
+    def msg := convert.format_string:"Could not listen on port %0":port
+    stderr.writeln:msg
+    
