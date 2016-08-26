@@ -5,12 +5,12 @@ import <string>
 import "token" as Token
 
 # Adds element to array, returns index
-_push(arr, elem)
+? _push(arr, elem)
   def len := sizeof:arr
   arr[len] := elem
   len
   
-_showHelp
+? _showHelp
   print:"usage: 5gl [options...] <file>"
 
 ? scan(filename)
