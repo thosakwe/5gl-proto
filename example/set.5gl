@@ -1,0 +1,19 @@
+# Sets allow you to move an arbitrary number of data together as a single unit.
+
+import <std>
+
+? main
+  # Sets are defined using a literal notation
+  def set := [1, 2, 3]
+  
+  # Sets can be defined within a given range as well
+  def octave := [1..8]
+  
+  # Sets can be indexed
+  set[0]
+    print:"First element (%0) was a truthy value":set[0]
+    for i in [0..sizeof:set]
+      print:"Element #%0: %1":(+:i:1):set[i]
+      
+      
+  
