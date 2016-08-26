@@ -1,7 +1,7 @@
 # 5gl-proto
 Loose prototype of a 5th-gen language with terse syntax.
 
-This will probably just be written C++ and generate more C++.
+This will probably just be written in Java and generate some sort of bytecode, probably JVM.
 
 # Example
  Proto code:
