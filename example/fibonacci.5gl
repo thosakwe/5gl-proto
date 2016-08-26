@@ -6,4 +6,4 @@
     
 ? main
   def x := 17
-  printf:"The %dth Fibonacci number is: %d\n":x:(fib:x)
+  print:"The %dth Fibonacci number is: %0":x:(fib:x)
