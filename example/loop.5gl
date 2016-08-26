@@ -2,7 +2,7 @@
 # Print numbers 1 through 255
 
 ? _loop(i, max)
-  printf:"%d":i
+  print:"%0":i
   i := +:i:1
   <:255:i
     _loop:i:max
