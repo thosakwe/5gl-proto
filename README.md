@@ -3,6 +3,8 @@ Loose prototype of a 5th-gen language with terse syntax.
 
 This will probably just be written in Java and generate some sort of bytecode, probably JVM.
 
+*EDIT:* Changed to Dart* and run in the browser.
+
 # Example
  Proto code:
  

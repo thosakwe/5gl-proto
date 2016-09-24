@@ -1,0 +1,11 @@
+any: ? any ASCII character ?;
+letter: ? any Latin alphabet character, uppercase or lowercase, from A to Z ?;
+digit: ? any Arabic digit from 0 to 9 ?;
+safe-char: letter | digit | "_";
+string: '"' [{ any }] '"';
+identifer-char: safe-char | ;
+identifier: { identifier-char };
+
+standard-library: "<", { safe-char }, ">";
+
+import-declaration: "import", string | standard-library;
